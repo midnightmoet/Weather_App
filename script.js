@@ -2,12 +2,14 @@ const apikey = "46f80a02ecae410460d59960ded6e1c6";
 const weatherDataEl = document.getElementById("weather-data");
 const cityInputEl = document.getElementById("city-input");
 //const stateInputEl = document.getElementById("state-input");
+//const countryInputEl = document.getElementById("country-input");
 const formEl = document.querySelector("form");
 
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
   const cityValue = cityInputEl.value;
   // const stateValue = stateInputEl.value;
+  // const countryValue = countryInputEl.value;
   getWeatherData(cityValue);
 });
 
