@@ -29,9 +29,9 @@ async function getWeatherData(cityValue) {
     const icon = data.weather[0].icon;
 
     const details = [
-      `Feels like: ${Math.round(data.main.feels_like)}`,
+      `Feels like: ${Math.round(data.main.feels_like)}°F`,
       `Humidity: ${data.main.humidity}%`,
-      `Wind speed: ${data.wind.speed} mph`,
+      `Wind speed: ${Math.round(data.wind.speed)} mph`,
     ];
 
     weatherDataEl.querySelector(
